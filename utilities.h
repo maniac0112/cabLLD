@@ -7,6 +7,8 @@ struct Location{
     std::string toString(){
         return " (" + std::to_string(x_)+","+std::to_string(y_)+") "; 
     }
+    Location(int x = 0, int y = 0): x_(x), y_(y){
+    }
 };
 
 enum class Rating{
