@@ -36,3 +36,12 @@ int main() {
 
     return 0;
 }
+
+/*
+clang++ -std=c++20 \
+    uber.cpp driver.cpp rider.cpp trip.cpp tripManager.cpp tripMetaData.cpp \
+    driverManager.cpp riderManager.cpp \
+    PricingStrategy/DefaultPricingStrategy.cpp \
+    DriverMatchStrategy/NearestDriverMatchStrategy.cpp \
+    -o uber.out
+*/
