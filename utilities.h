@@ -27,7 +27,7 @@ enum class TripStatus{
     StatusUnknown
 };
 
-std::string tripStatusToString(TripStatus status) {
+inline std::string tripStatusToString(TripStatus status) {
     switch (status) {
         case TripStatus::TripInitiated:   return "Trip Initiated";
         case TripStatus::TripConfirmed:   return "Trip Confirmed";

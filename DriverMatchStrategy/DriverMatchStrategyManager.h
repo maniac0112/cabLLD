@@ -10,7 +10,7 @@ public:
 
 private: 
 
-    DriverMatchStrategyManager();
+    DriverMatchStrategyManager() = default; 
     static std::mutex mtx_; 
     static DriverMatchStrategyManager* instance_; 
 };

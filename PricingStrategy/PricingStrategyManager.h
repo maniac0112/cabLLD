@@ -12,7 +12,7 @@ public:
 
 private: 
 
-    PricingStrategyManager();
+    PricingStrategyManager() = default;
     static std::mutex mtx_; 
     static PricingStrategyManager* instance_; 
 };

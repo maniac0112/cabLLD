@@ -16,7 +16,7 @@ public:
     
 private:
 
-    RiderManager();
+    RiderManager() = default;
     std::unordered_map<std::string, Rider*> RiderMap_; 
     static std::mutex mtx_; 
     static RiderManager* instance_;

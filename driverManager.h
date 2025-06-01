@@ -17,7 +17,7 @@ public:
     std::unordered_map<std::string, Driver*>  getDriverMap();
 private:
 
-    DriverManager();
+    DriverManager() = default;
     std::unordered_map<std::string, Driver*> DriverMap_; 
     static std::mutex mtx_; 
     static DriverManager* instance_;

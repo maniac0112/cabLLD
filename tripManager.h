@@ -19,7 +19,7 @@ public:
     std::unordered_map<uint32_t, Trip*> getTripMap();
 
 private: 
-    TripManager();
+    TripManager() = default;
     static TripManager* instance_; 
     static std::mutex mtx_;
     RiderManager* riderManager_;
